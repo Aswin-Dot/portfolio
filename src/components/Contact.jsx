@@ -2,7 +2,7 @@ const stack = [
   { key: 'Built with', val: 'React + Vite + Tailwind' },
   { key: 'Deployed to', val: 'GitHub Pages' },
   { key: 'Location', val: 'Bangalore, IN' },
-  { key: 'Status', val: 'Got an interesting problem?' },
+  { key: 'Status', val: 'Open to solving problems!' },
 ]
 
 export default function Contact({ isMobile }) {
