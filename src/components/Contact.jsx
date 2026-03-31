@@ -6,6 +6,8 @@ const stack = [
 ]
 
 export default function Contact({ isMobile }) {
+  const resumeHref = `${import.meta.env.BASE_URL}resume.pdf`
+
   return (
     <section id="contact" style={{ background: '#111', padding: isMobile ? '52px 20px' : '80px 56px' }} className="section-reveal">
       <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '40px' : '56px', alignItems: 'end' }}>
@@ -22,7 +24,7 @@ export default function Contact({ isMobile }) {
               { label: 'aswincse10@gmail.com', href: 'mailto:aswincse10@gmail.com' },
               { label: 'LinkedIn ↗', href: 'https://linkedin.com/in/aswin-raj-195b13203' },
               { label: 'GitHub ↗', href: 'https://github.com/Aswin-Dot' },
-              { label: 'Resume ↓', href: '/resume.pdf', download: true, muted: true },
+              { label: 'Resume ↓', href: resumeHref, download: true, muted: true },
             ].map((link, i) => (
               <a
                 key={i}

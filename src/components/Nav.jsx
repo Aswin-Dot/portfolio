@@ -47,7 +47,7 @@ export default function Nav({ isMobile }) {
             ))}
 
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               download
               style={{
                 display: 'flex', alignItems: 'center', gap: '6px',
@@ -103,7 +103,7 @@ export default function Nav({ isMobile }) {
               {s}
             </button>
           ))}
-          <a href="/resume.pdf" download
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} download
             style={{ display: 'block', fontSize: '13px', fontWeight: 700, color: '#666', padding: '12px 0', textDecoration: 'none', fontFamily: 'DM Mono, monospace', letterSpacing: '1px', textTransform: 'uppercase' }}>
             Resume ↓
           </a>
