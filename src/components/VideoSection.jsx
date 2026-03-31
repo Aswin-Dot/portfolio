@@ -18,27 +18,17 @@ export default function VideoSection({ isMobile, isTablet }) {
         alignItems: 'start',
       }}>
         <div style={{
-          background: '#0a0a0a', borderRadius: '10px', aspectRatio: '16/9',
-          display: 'flex', alignItems: 'center', justifyContent: 'center',
-          position: 'relative', overflow: 'hidden', border: '0.5px solid #1a1a1a',
+          borderRadius: '10px', overflow: 'hidden', border: '0.5px solid #1a1a1a',
+          position: 'relative', paddingBottom: '56.25%', height: 0,
         }}>
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 30% 50%, #1a1a2e 0%, #0a0a0a 70%)' }} />
-
-          <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
-            <div className="play-pulse" style={{
-              position: 'relative', width: '64px', height: '64px', borderRadius: '50%',
-              background: 'rgba(255,255,255,0.1)', border: '0.5px solid rgba(255,255,255,0.2)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'none',
-            }}>
-              <svg width="18" height="18" viewBox="0 0 16 16" fill="white"><polygon points="5,3 13,8 5,13" /></svg>
-            </div>
-            <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)', fontFamily: 'DM Mono, monospace', letterSpacing: '1px' }}>PLAY</span>
-          </div>
-
-          <div style={{ position: 'absolute', bottom: '20px', left: '20px', right: '20px' }}>
-            <div style={{ fontSize: '14px', fontWeight: 600, color: '#fff', marginBottom: '4px' }}>Why I do what I do</div>
-            <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.45)', fontFamily: 'DM Mono, monospace' }}>Aswin Raj · Product Engineer · 2026</div>
-          </div>
+          <iframe
+            src="https://www.loom.com/embed/9df8f83dec624acf8b6ff4a16aed0d9b"
+            frameborder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowFullScreen
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+          />
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
